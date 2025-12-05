@@ -1,0 +1,803 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.7)  29 NOV 2025 16:29
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**d:/Student_Study_Research/3_PhD/Research/dissertation/presentation_booklet.tex
+(d:/Student_Study_Research/3_PhD/Research/dissertation/presentation_booklet.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+(C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cls
+Document Class: scrartcl 2025/08/28 v3.47 KOMA-Script document class (article)
+(C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.sty
+Package: scrkbase 2025/08/28 v3.47 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2025/08/28 v3.47 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2025/08/28 v3.47 KOMA-Script package (file load hooks)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+Package: scrlfile-hook 2025/08/28 v3.47 KOMA-Script package (using LaTeX hooks)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2025/08/28 v3.47 KOMA-Script package (logo)
+))) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
+)) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.sty
+Package: tocbasic 2025/08/28 v3.47 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip49
+\scr@dte@tocline@numbox=\box53
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 141.
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 2485.
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrsize11pt.clo
+File: scrsize11pt.clo 2025/08/28 v3.47 KOMA-Script font size class option (11pt)
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typearea.sty
+Package: typearea 2025/08/28 v3.47 KOMA-Script package (type area)
+\ta@bcor=\skip50
+\ta@div=\count275
+\ta@hblk=\skip51
+\ta@vblk=\skip52
+\ta@temp=\skip53
+\footheight=\skip54
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1806.
+)
+\c@part=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\scr@dte@section@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 5160.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 5160.
+\scr@dte@part@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 5168.
+\scr@dte@subsection@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 5178.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 5178.
+\scr@dte@subsubsection@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 5188.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 5188.
+\scr@dte@paragraph@maxnumwidth=\skip59
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 5199.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 5199.
+\scr@dte@subparagraph@maxnumwidth=\skip60
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 5209.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 5209.
+\abovecaptionskip=\skip61
+\belowcaptionskip=\skip62
+\c@pti@nb@sid@b@x=\box54
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 6409.
+\scr@dte@figure@maxnumwidth=\skip63
+\c@figure=\count282
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 6421.
+\scr@dte@table@maxnumwidth=\skip64
+\c@table=\count283
+Class scrartcl Info: Redefining `\numberline' on input line 6591.
+\bibindent=\dimen148
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count284
+\calc@Bcount=\count285
+\calc@Adimen=\dimen149
+\calc@Bdimen=\dimen150
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count286
+\calc@Cskip=\skip67
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen151
+\ESO@tempdimb=\dimen152
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count287
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+)
+\AM@pagewidth=\dimen155
+\AM@pageheight=\dimen156
+\AM@fboxrule=\dimen157
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count288
+\AM@pagebox=\box55
+\AM@global@opts=\toks18
+\AM@pagecnt=\count289
+\AM@toc@title=\toks19
+\AM@lof@heading=\toks20
+\c@AM@survey=\count290
+\AM@templatesizebox=\box56
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count291
+)
+No file presentation_booklet.aux.
+\openout1 = `presentation_booklet.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+Package scrbase Info: activating english \abstractname on input line 4.
+Package scrbase Info: activating english \partname on input line 4.
+Package scrbase Info: activating english \figurename on input line 4.
+Package scrbase Info: activating english \tablename on input line 4.
+Package scrbase Info: activating english \contentsname on input line 4.
+Package scrbase Info: activating english \listfigurename on input line 4.
+Package scrbase Info: activating english \listtablename on input line 4.
+Package scrbase Info: activating english \refname on input line 4.
+Package scrbase Info: activating english \indexname on input line 4.
+(C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count292
+\scratchdimen=\dimen158
+\scratchbox=\box57
+\nofMPsegments=\count293
+\nofMParguments=\count294
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count295
+\MPscratchDim=\dimen159
+\MPnumerator=\count296
+\makeMPintoPDFobject=\count297
+\everyMPtoPDFconversion=\toks22
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (C:\Users\Xu Mingchuan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<presentation.pdf, id=1, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf>
+Package pdftex.def Info: presentation.pdf  used on input line 5.
+(pdftex.def)             Requested size: 364.19473pt x 273.14581pt.
+<presentation.pdf, id=3, page=1, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 1>
+Package pdftex.def Info: presentation.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 364.19473pt x 273.14581pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 1>
+Package pdftex.def Info: presentation.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 1>
+Package pdftex.def Info: presentation.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 1>
+Package pdftex.def Info: presentation.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=4, page=2, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 2>
+Package pdftex.def Info: presentation.pdf , page2 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 2>
+Package pdftex.def Info: presentation.pdf , page2 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 1>
+Package pdftex.def Info: presentation.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 2>
+Package pdftex.def Info: presentation.pdf , page2 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[1
+
+
+ <./presentation.pdf> <./presentation.pdf{C:/Users/Xu Mingchuan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}>]
+<presentation.pdf, id=317, page=3, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 3>
+Package pdftex.def Info: presentation.pdf , page3 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 3>
+Package pdftex.def Info: presentation.pdf , page3 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=318, page=4, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 4>
+Package pdftex.def Info: presentation.pdf , page4 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 4>
+Package pdftex.def Info: presentation.pdf , page4 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 3>
+Package pdftex.def Info: presentation.pdf , page3 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 4>
+Package pdftex.def Info: presentation.pdf , page4 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[2
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=347, page=5, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 5>
+Package pdftex.def Info: presentation.pdf , page5 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 5>
+Package pdftex.def Info: presentation.pdf , page5 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=348, page=6, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 6>
+Package pdftex.def Info: presentation.pdf , page6 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 6>
+Package pdftex.def Info: presentation.pdf , page6 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 5>
+Package pdftex.def Info: presentation.pdf , page5 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 6>
+Package pdftex.def Info: presentation.pdf , page6 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[3
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=360, page=7, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 7>
+Package pdftex.def Info: presentation.pdf , page7 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 7>
+Package pdftex.def Info: presentation.pdf , page7 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=361, page=8, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 8>
+Package pdftex.def Info: presentation.pdf , page8 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 8>
+Package pdftex.def Info: presentation.pdf , page8 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 7>
+Package pdftex.def Info: presentation.pdf , page7 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 8>
+Package pdftex.def Info: presentation.pdf , page8 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[4
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=398, page=9, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 9>
+Package pdftex.def Info: presentation.pdf , page9 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 9>
+Package pdftex.def Info: presentation.pdf , page9 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=399, page=10, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 10>
+Package pdftex.def Info: presentation.pdf , page10 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 10>
+Package pdftex.def Info: presentation.pdf , page10 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 9>
+Package pdftex.def Info: presentation.pdf , page9 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 10>
+Package pdftex.def Info: presentation.pdf , page10 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[5
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=403, page=11, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 11>
+Package pdftex.def Info: presentation.pdf , page11 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 11>
+Package pdftex.def Info: presentation.pdf , page11 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=404, page=12, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 12>
+Package pdftex.def Info: presentation.pdf , page12 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 12>
+Package pdftex.def Info: presentation.pdf , page12 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 11>
+Package pdftex.def Info: presentation.pdf , page11 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 12>
+Package pdftex.def Info: presentation.pdf , page12 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[6
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=421, page=13, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 13>
+Package pdftex.def Info: presentation.pdf , page13 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 13>
+Package pdftex.def Info: presentation.pdf , page13 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=422, page=14, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 14>
+Package pdftex.def Info: presentation.pdf , page14 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 14>
+Package pdftex.def Info: presentation.pdf , page14 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 13>
+Package pdftex.def Info: presentation.pdf , page13 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 14>
+Package pdftex.def Info: presentation.pdf , page14 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[7
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=429, page=15, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 15>
+Package pdftex.def Info: presentation.pdf , page15 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 15>
+Package pdftex.def Info: presentation.pdf , page15 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=430, page=16, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 16>
+Package pdftex.def Info: presentation.pdf , page16 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 16>
+Package pdftex.def Info: presentation.pdf , page16 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 15>
+Package pdftex.def Info: presentation.pdf , page15 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 16>
+Package pdftex.def Info: presentation.pdf , page16 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[8
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=434, page=17, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 17>
+Package pdftex.def Info: presentation.pdf , page17 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 17>
+Package pdftex.def Info: presentation.pdf , page17 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=435, page=18, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 18>
+Package pdftex.def Info: presentation.pdf , page18 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 18>
+Package pdftex.def Info: presentation.pdf , page18 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 17>
+Package pdftex.def Info: presentation.pdf , page17 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 18>
+Package pdftex.def Info: presentation.pdf , page18 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[9
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=457, page=19, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 19>
+Package pdftex.def Info: presentation.pdf , page19 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 19>
+Package pdftex.def Info: presentation.pdf , page19 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=458, page=20, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 20>
+Package pdftex.def Info: presentation.pdf , page20 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 20>
+Package pdftex.def Info: presentation.pdf , page20 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 19>
+Package pdftex.def Info: presentation.pdf , page19 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 20>
+Package pdftex.def Info: presentation.pdf , page20 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[10
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=500, page=21, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 21>
+Package pdftex.def Info: presentation.pdf , page21 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 21>
+Package pdftex.def Info: presentation.pdf , page21 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=501, page=22, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 22>
+Package pdftex.def Info: presentation.pdf , page22 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 22>
+Package pdftex.def Info: presentation.pdf , page22 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 21>
+Package pdftex.def Info: presentation.pdf , page21 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 22>
+Package pdftex.def Info: presentation.pdf , page22 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[11
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=505, page=23, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 23>
+Package pdftex.def Info: presentation.pdf , page23 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 23>
+Package pdftex.def Info: presentation.pdf , page23 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=506, page=24, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 24>
+Package pdftex.def Info: presentation.pdf , page24 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 24>
+Package pdftex.def Info: presentation.pdf , page24 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 23>
+Package pdftex.def Info: presentation.pdf , page23 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 24>
+Package pdftex.def Info: presentation.pdf , page24 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[12
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=516, page=25, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 25>
+Package pdftex.def Info: presentation.pdf , page25 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 25>
+Package pdftex.def Info: presentation.pdf , page25 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=517, page=26, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 26>
+Package pdftex.def Info: presentation.pdf , page26 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 26>
+Package pdftex.def Info: presentation.pdf , page26 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 25>
+Package pdftex.def Info: presentation.pdf , page25 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 26>
+Package pdftex.def Info: presentation.pdf , page26 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[13
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=522, page=27, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 27>
+Package pdftex.def Info: presentation.pdf , page27 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 27>
+Package pdftex.def Info: presentation.pdf , page27 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=523, page=28, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 28>
+Package pdftex.def Info: presentation.pdf , page28 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 28>
+Package pdftex.def Info: presentation.pdf , page28 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 27>
+Package pdftex.def Info: presentation.pdf , page27 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 28>
+Package pdftex.def Info: presentation.pdf , page28 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[14
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=538, page=29, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 29>
+Package pdftex.def Info: presentation.pdf , page29 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 29>
+Package pdftex.def Info: presentation.pdf , page29 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=539, page=30, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 30>
+Package pdftex.def Info: presentation.pdf , page30 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 30>
+Package pdftex.def Info: presentation.pdf , page30 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 29>
+Package pdftex.def Info: presentation.pdf , page29 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 30>
+Package pdftex.def Info: presentation.pdf , page30 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[15
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=543, page=31, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 31>
+Package pdftex.def Info: presentation.pdf , page31 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 31>
+Package pdftex.def Info: presentation.pdf , page31 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=544, page=32, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 32>
+Package pdftex.def Info: presentation.pdf , page32 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 32>
+Package pdftex.def Info: presentation.pdf , page32 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 31>
+Package pdftex.def Info: presentation.pdf , page31 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 32>
+Package pdftex.def Info: presentation.pdf , page32 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[16
+
+ <./presentation.pdf> <./presentation.pdf>]
+<presentation.pdf, id=548, page=33, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 33>
+Package pdftex.def Info: presentation.pdf , page33 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 33>
+Package pdftex.def Info: presentation.pdf , page33 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+<presentation.pdf, id=549, page=34, 364.19562pt x 273.14648pt>
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 34>
+Package pdftex.def Info: presentation.pdf , page34 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 34>
+Package pdftex.def Info: presentation.pdf , page34 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+
+
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 33>
+Package pdftex.def Info: presentation.pdf , page33 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+File: presentation.pdf Graphic file (type pdf)
+<use presentation.pdf, page 34>
+Package pdftex.def Info: presentation.pdf , page34 used on input line 5.
+(pdftex.def)             Requested size: 563.6638pt x 422.74748pt.
+[17
+
+ <./presentation.pdf> <./presentation.pdf>] (presentation_booklet.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 6300 strings out of 468133
+ 133179 string characters out of 5427289
+ 655156 words of memory out of 5000000
+ 34898 multiletter control sequences out of 15000+600000
+ 627125 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 108i,17n,107p,11298b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Xu Mingchuan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on presentation_booklet.pdf (17 pages, 451384 bytes).
+PDF statistics:
+ 569 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+
