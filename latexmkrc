@@ -99,6 +99,7 @@ if ($USEDEV ne '') {
 
 $biber = 'biber ' . $BIBERFLAGS . ' %O %S';
 $bibtex = 'bibtex8 -B -c utf8cyrillic.csf %B';
+$bibtex = 'biber %O %B';
 
 # set to 1 to count CPU time
 $show_time = $TIMERON;
