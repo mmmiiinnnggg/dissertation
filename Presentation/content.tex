@@ -1,305 +1,269 @@
-\section{Списки}
+\section{Постановка задачи и её актуальность}
 \begin{frame}[plain, noframenumbering]
     \begin{center}
         \Huge
-        Списки
+        Постановка задачи и её актуальность
     \end{center}
 \end{frame}
 
-\subsection{Нумерованные}
-
 \begin{frame}
-    \frametitle{Нумерованные списки}
-    \begin{enumerate}
-        \item один
-        \item два
-        \item три
-    \end{enumerate}
-\end{frame}
-\note{
-    Этот текст будет виден только если его отображение включено
-    в~файле \textbf{Presentation/setup}.
-    Для раздельного вывода презентации и заметок на~разные экраны (как
-    в~impress или powerpoint) можно использовать программу
-    \textit{pdf-presenter-console}.
-}
+    \frametitle{Особенности древнекитайских рукописей}
 
-\subsection{Не нумерованные}
-
-
-\begin{frame}
-    \frametitle{Перечисления}
     \begin{itemize}
-        \item Проблема 1
-        \item Проблема 2
-        \item Проблема 3
+        \item \textbf{В китайской письменности <<почти нет словаря>>}: в настоящее время общее число уникальных иероглифов, встречающихся в исторических источниках, превышает $6 \times 10^4$, включая устаревшие и редко используемые. В некоторых справочниках достигается $10^5$.
+        \item \textbf{Сильный дисбаланс распределение символов:} менее 20\% иероглифов обеспечивают около 80\% общего объёма письменной продукции. Подобные редкие тексты могут быть представлены лишь в одном или нескольких документах, либо полностью отсутствовать в доступных наборах данных.
+    \end{itemize}
+
+    \textbf{Вывод:} невозможность формирования полного и замкнутого множества иероглифов, встречающихся в реальных архивных источниках $\Rightarrow $ очень сложно для обучения.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Особенности древнекитайских рукописей}
+    \includegraphics[width=0.9\linewidth]{sec2_ancient_docs_3.jpg}\\
+
+    \textbf{Вывод:} высокая вариативность письменности: отсутствие строгих стандартов письма, индивидуальный почерк переписчиков, физическим состоянием носителя и.т.д.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Почему <<расшифровка>> иероглифов не подходит?}
+    \begin{itemize}
+        \item Сбор и аннотирование датасетов для покрытия полного набора иероглифов практически невозможны.
+        \item Редкие символы, представленные ограниченным числом примеров, систематически распознаются с низкой точностью.
+        \item В классической задаче расшифровки текста допустимая доля ошибок крайне мала - в то же время в задаче поиска допускает высокую ошибку <<ложного обнаружения>>.
+    \end{itemize}
+
+    % \textbf{Вывод:} подходы, ориентированные на полную расшифровку и обучение на больших размеченных выборках, плохо согласуются с условиями редкости данных, открытого множества классов и поисковой природы практических сценариев использования.
+
+    \textbf{Решение:} перейти на задачу поиска
+\end{frame}
+
+\begin{frame}
+    \frametitle{Постановка рассматриваемой задачи}
+    \includegraphics[width=1.0\linewidth]{sec2_contextual_search.jpeg}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Актуальность рассматриваемой задачи}
+
+    \textbf{Актуальность:} острая потребность в создании вспомогательного инструмента, облегчающего навигацию по большим коллекциям историческмх изображений при минимальных требованиях к ресурсам.:
+    \begin{itemize}
+        \item выявление и ранжирование фрагментов архива, релевантных заданному иероглифическому образцу;
+        \item сузить пространство поиска и предоставить пользователю ограниченный набор наиболее вероятных кандидатов.
     \end{itemize}
 \end{frame}
-\note[itemize]{
-    \item Тезис 1
-    \item Тезис 2
-    \item Тезис 3
-}
 
-\subsection{Комбинированные}
+\section{Предлагаемый подход}
+\begin{frame}[plain, noframenumbering]
+    \begin{center}
+        \Huge
+        Предлагаемый подход
+    \end{center}
+\end{frame}
+
 
 \begin{frame}
-    \frametitle{Комбинация списков}
-    \begin{enumerate}
-        \item \textbf{Задача 1}
-              \begin{itemize}
-                  \item Подзадача 1-1
-                  \item Подзадача 1-2
-              \end{itemize}
-        \item \textbf{Задача 2}
-              \begin{itemize}
-                  \item Подзадача 2-1
-                  \item Подзадача 2-2
-                  \item Подзадача 2-3
-              \end{itemize}
-        \item \textbf{Задача 3}
-              \begin{itemize}
-                  \item Подзадача 3-1
-                  \item Подзадача 3-2
-                  \item Подзадача 3-3
-              \end{itemize}
-    \end{enumerate}
-\end{frame}
-\note[itemize]{
-    \item Задача 1
-    \item Задача 2
-    \item Задача 3
-}
-
-\begin{frame}[allowframebreaks]
-    \frametitle{Разделение слайда}
-    Поясняющий текст
+    \frametitle{Схема предложенного двухэтапного подхода}
+    Предложенный подход разделен на две взаимосвязанные части:
     \begin{itemize}
-        \item Один
-        \item Два
-        \item Три
+        \item Представление иероглифического изображения в виде компактного и информативного признакового описания в виде \textit{конечного набора точек} с использованием \textit{морфологических моделей}.
+        \item Прямое вычисление меры сходства между запросом и элементами архива через \textit{метод линейного программирования} (в частности, задача о назначениях).
     \end{itemize}
-    \framebreak
-    Продолжение предыдущего слайда
+
 \end{frame}
 
-\section{Графика}
-\begin{frame}[plain, noframenumbering]
-    \begin{center}
-        \Huge
-        Графика
-    \end{center}
-\end{frame}
-
+\subsection{Генерация признаков по аналогии созвездий}
 
 \begin{frame}
-    \frametitle{Одиночное изображение}
+    \frametitle{Генерация признаков по аналогии созвездий}
     \centering
-    \includegraphics[width=0.8\linewidth]{latex} % окружение figure не требуется
+    \includegraphics[width=0.8\linewidth]{sec3_constellation_1.jpg}\\
+    Пример модели для сравнения формы объектов на основе конечных малых наборов их точек: созвездие Большая Медведица
+
 \end{frame}
 
 \begin{frame}
-    \frametitle{Векторная графика}
-    \begin{figure}
-        \centering
-        \ifdefmacro{\tikzsetnextfilename}{\tikzsetnextfilename{tikz_presentation}}{}% присваиваемое предкомпилированному pdf имя файла (не обязательно)
-        \input{Presentation/images/tikz_plot.tikz}
-    \end{figure}
-\end{frame}
-
-\subsection{Расположение}
-
-\begin{frame}
-    \frametitle{Изображения по-вертикали}
+    \frametitle{Генерация признаков по аналогии созвездий}
     \centering
-    \vfill
-    \includegraphics[width=0.8\linewidth,height=0.1\textheight]{latex} \\
-    \TeX
-    \vfill
-    \includegraphics[width=0.8\linewidth,height=0.2\textheight]{latex} \\
-    \LaTeX
-    \vfill
-    \includegraphics[scale=0.2]{latex} \\
-    \vfill
+    \includegraphics[width=0.4\linewidth]{sec3_constellation_2.jpg}\\
+    Пример модели для сравнения формы объектов на основе конечных малых наборов их точек: отпечатка пальцев и минуций
+
 \end{frame}
 
+\subsection{Непрерывная морфология и построение скелета}
 
 \begin{frame}
-    \frametitle{Изображения по-горизонтали}
-    \begin{minipage}[t]{0.47\linewidth}
-        \textbf{Составная \\ подпись 1}
-        \center{\includegraphics[width=1\linewidth]{knuth1}}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.47\linewidth}
-        \textbf{Составная \\ подпись 2}
-        \center{\includegraphics[width=1\linewidth]{knuth2}}
-    \end{minipage}
-\end{frame}
+    \frametitle{Непрерывные морфологические модели}
+    Концепция непрерывного скелета бинарных изображений, используемая в данном исследовании, следует общей теории, раработанной Л.М. Местецким. Причина выбора непрерывной морфологии для построения признаков:
+    \begin{itemize}
+        \item Независимость к разрешениям исходных изображений.
+        \item Высокая вычислительная эффективность.
+        \item Доступность методв теории графов и топологического анализа при представлении скелета в виде геометрического графа.
+    \end{itemize}
 
-\subsection{Линии}
+    Основные этапы построения непрерывного скелета иероглифа:
+    \begin{itemize}
+        \item Бинаризация изображения иероглифа.
+        \item Трассировка границы изображения алгоритмом подвижного моста.
+        \item Построение граничного коридора по следу трассировки.
+        \item Полигональная аппроксимация границы бинарной фигуры.
+        \item Построение непрерывного скелета.
+        \item Прореживание скелета и структурная регуляризация.
+    \end{itemize}
+\end{frame}
 
 \begin{frame}
-    \frametitle{Разделяющие линии}
-    \begin{minipage}[c]{0.47\linewidth}
-        \center{\includegraphics[width=1\linewidth]{latex}}
-        \bigskip
-        \hrule{}
-        \bigskip
-        \textbf{Составная \\ подпись 1}
-    \end{minipage}
-    \hfill
-    \vrule{}
-    \hfill
-    \begin{minipage}[c]{0.47\linewidth}
-        \flushright
-        \textbf{Составная \\ подпись 2}
-        \center{\includegraphics[width=1\linewidth]{knuth2}}
-    \end{minipage}
+    \frametitle{Непрерывные морфологические модели}
+    \centering
+    \includegraphics[width=1.0\linewidth]{pre_skeleton.jpg}\\
+    Пример построения непрерывного скелета иероглифа
 \end{frame}
 
-\section{Остальное}
-\begin{frame}[plain, noframenumbering]
-    \begin{center}
-        \Huge
-        Остальное
-    \end{center}
-\end{frame}
-
-\subsection{Формулы}
+\subsection{Признаковое описание иероглифа через (небольшой) конечный набор точек - созвездие}
 
 \begin{frame}
-    \frametitle{Формулы}
+    \frametitle{От непрерывного скелета до созвездия}
+    Полученный скелет имеет три типа вершин:
+    \begin{itemize}
+        \item Вершины степени \textbf{один} - конца ветвей скелета.
+        \item Вершины степени \textbf{два} - промежуточные точки, расположенные вдоль ветвей между концами и узлами разветвления.
+        \item Вершины степени \textbf{три} - точки ветвления.
+    \end{itemize}
+    \centering
+    \includegraphics[width=0.8\linewidth]{pre_nodes.jpg}\\
+    Пример скелета иероглифа с вершинами разных степеней. \\
+    \textbf{Цель:} Представить иероглиф конечным набором точек вершин по аналогии созвездии.
+\end{frame}
+
+\begin{frame}
+    \frametitle{От непрерывного скелета до созвездия}
+    Формирование созвездия осуществляется следующим образом:
+    \begin{itemize}
+        \item \textbf{Выделение базовых вершин.} В созвездие включаются все вершины скелета со степенью один и три.
+        \item \textbf{Выделение характерных точек кривизны.} Дополнительные характерные точки, определяющие форму штрихов иероглифа, выделяются на ветвях скелета и выбираются точки экстремальной кривизны ветвей (кривых Безье, угол между ребрами, ...).
+        \item \textbf{Нормализация созвездия.} Координаты полученных вершин приводятся к общей локальной системе координат иероглифа.
+        \item \textbf{Удаление аномальных связанных компонент.} Структуры проявляются в виде малых изолированных связанных компонент, которые не несут существенной информации о форме иероглифа, но при этом нарушают нормализацию созвездия и могут негативно влиять на устойчивость процедуры сопоставления.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Вычисление мер сходства}
+
+    Конечные множества характерных точек - созвездия, описывающего его геометрическую структуру. Сравнение двух иероглифов, таким образом, сводится к \textbf{задаче сопоставления двух конечных точечных множеств.}
+    \includegraphics[width=1.0\linewidth]{sec4_overlapping_constellations.jpg}\\
+    Это сопоставление естественным образом формулируется как \textbf{задача о назначениях}, где элементы одного созвездия должны быть сопоставлены элементам другого с \textit{минимальными суммарными затратами}.
+
+\end{frame}
+
+\subsection{Модель минимальной стоимости}
+\begin{frame}
+    \frametitle{Модель минимальной стоимости}
+    \textbf{Идея:} два иероглифа считаются тем более сходными, чем меньшей является суммарная геометрическая разница между точками их созвездий при оптимальном выборе соответствий.
+
+    Формально, пусть $n,m$ – число точек в двух созвездиях. Обозначим $X=\{x_{ij}\}$ – бинарные переменные, указывающие соответствие между $i$-ой точкой первого созвездия и $j$-ой точкой второго созвездия. Если $x_{ij}=1$, то соответствие между этими точками установлено, если $x_{ij}=0$, то нет. Пусть $\lambda_{ij}$ – коэффициенты стоимости, определяющие вклад соответствия пары точек $(i,j)$ в общую меру различия между созвездиями. В простейшем случае - евклидовое расстояние между соответствующими точками
+
+    Оптимизационная задача о назначениях имеет следующий вид:
     \[
-    \left\{
-    \begin{array}{rl}
-        \dot x = & \sigma (y-x)  \\
-        \dot y = & x (r - z) - y \\
-        \dot z = & xy - bz
-    \end{array}
-    \right.
+        \min f(X) = \sum_{i=1}^{n}\sum_{j=1}^{m}\lambda_{ij}x_{ij}, \quad X =\{x_{ij}\} \in \{0,1\}, \sum_{i=1}^{n}x_{ij}\ge 1, \sum_{j=1}^{m}x_{ij}\ge 1.
     \]
 \end{frame}
 
-\begin{frame}
-    \frametitle{amsmath}
-    \centering
-    \begin{minipage}[t]{0.5\linewidth}
-        \begin{multline*}
-            y = 1 x^1 + 2 x^2 + 3 x^3 + \\ + 4 x^4 + 5 x^5 + \dots
-        \end{multline*}
-    \end{minipage}
-\end{frame}
 
-\begin{frame}[allowframebreaks]
-    \frametitle{Уравнения Максвелла}
-    \centering{
-        \small
-        \def\arraystretch{1.8}%
-        \begin{tabular}{ll}
-            \toprule
-            Интегральная форма                                                                                                                                            & Дифференциальная форма                                                          \\ \midrule
-            \(Q_e(t) = \displaystyle\oiint_S \vec D(t) \cdot d\vec{s} = \displaystyle\iiint_V \rho_v(t) dv\)                                                              & \(\nabla \cdot \vec D(t) = \rho_v(t)\)                                          \\
-            \(\displaystyle\oiint_S \vec B(t) \cdot d\vec{s} = 0\)                                                                                                        & \(\nabla \cdot \vec B(t) = 0\)                                                  \\
-            \(V_{emf}(t) = \displaystyle\oint_L \vec E(t) \cdot d\vec{l}\) = \(- \displaystyle\iint_S \left[\frac{\partial\vec{B}(t)}{\partial t}\right] \cdot d\vec{s}\) & \(\nabla \times \vec E(t) = - \frac{\partial\vec{B}(t)}{\partial t}\)           \\
-            \(I(t) = \displaystyle\oint_L \vec H(t) \cdot d\vec{l} = \displaystyle\iint_S \left[\vec J(t) + \frac{\partial\vec{D}(t)}{\partial t}\right] \cdot d\vec{s}\) & \(\nabla \times \vec H(t) = \vec J(t) + \frac{\partial\vec{D}(t)}{\partial t}\) \\ \midrule
-            \(\displaystyle\oiint_S \vec J \cdot d\vec{s} = -\frac{\partial Q_e}{\partial t}\)                                                                            & \(\nabla \cdot \vec J = - \frac{\partial \rho_v}{\partial t}\)                  \\
-            \bottomrule
-            \multicolumn{2}{c}{\(\vec D(t) = \left[\varepsilon(t)\right] * \vec E(t)\)}                                                                                                                                                                     \\
-            \multicolumn{2}{c}{\(\vec B(t) = \left[\mu(t)\right] * \vec H(t)\)}                                                                                                                                                                             \\
-        \end{tabular}
-    }
-    \framebreak
-
-    \hspace{0.05\linewidth}
-    \centering{
-        \small
-        \def\arraystretch{1.8}%
-        \begin{tabular}{ll}
-            \toprule
-            Интегральная форма                                                                                                                & Дифференциальная форма                               \\ \midrule
-            \(Q_e = \displaystyle\oiint_S \vec D \cdot d\vec{s} = \displaystyle\iiint_V \rho_v dv\)                                           & \(\nabla \cdot \vec D = \rho_v\)                     \\
-            \(\displaystyle\oiint_S \vec B \cdot d\vec{s} = 0\)                                                                               & \(\nabla \cdot \vec B = 0\)                          \\
-            \(V_{emf} = \displaystyle\oint_L \vec E \cdot d\vec{l}\) = \(- \displaystyle\iint_S \left[j \omega \vec B\right] \cdot d\vec{s}\) & \(\nabla \times \vec E = - j \omega \vec B\)         \\
-            \(I = \displaystyle\oint_L \vec H \cdot d\vec{l} = \displaystyle\iint_S \left[\vec J + j \omega \vec D\right] \cdot d\vec{s}\)    & \(\nabla \times \vec H = \vec J + j \omega \vec{D}\) \\ \midrule
-            \(\displaystyle\oiint_S \vec J \cdot d\vec{s} = - j \omega Q_e\)                                                                  & \(\nabla \cdot \vec J = - j \omega \rho_v\)          \\
-            \bottomrule
-            \multicolumn{2}{c}{\(\vec D(t) = \left[\varepsilon\right] \vec E(t)\)}                                                                                                                   \\
-            \multicolumn{2}{c}{\(\vec B(t) = \left[\mu\right] \vec H(t)\)}                                                                                                                           \\
-        \end{tabular}
-    }
-\end{frame}
-
-\subsection{Таблицы}
 
 \begin{frame}
-    \frametitle{Таблица}
-    \centering
-    \begin{tabular}{|l|l|}
-        \hline
-        \textbf{Заголовок 1} & \textbf{Заголовок 2} \\
-        \hline
-        Сумма                & \(b+a\)              \\
-        \hline
-        Разность             & \(a-b\)              \\
-        \hline
-        Произведение         & \(a*b\)              \\
-        \hline
-    \end{tabular}
+    \frametitle{Модель минимальной стоимости}
+    Целевая функция $f(X)$ представляет собой суммарную стоимость всех выбранных соответствий и служит количественной мерой различия двух созвездий.
+
+    Наложенные ограничения на переменные $x_{ij}$ обеспечивают участие каждой точки обоих созвездий в процессе сопоставления. Условие
+    \[
+        \sum_{i=1}^{n}x_{ij}\ge 1
+    \]
+    гарантирует, что каждая точка первого созвездия имеет по крайней мере одну соответствующую точку во втором, а аналогичное условие
+    \[
+        \sum_{j=1}^{m}x_{ij}\ge 1
+    \]
+    обеспечивает участие каждой точки второго созвездия.
 \end{frame}
 
+\subsection{Модель максимального количества близких пар}
+
 \begin{frame}
-    \frametitle{Другая таблица}
-    \centering
-    \begin{tabular}{lc}
-        \toprule
-        \multicolumn{1}{c}{\textbf{Заголовок 1}} & \textbf{Заголовок 2} \\ \midrule
-        Сумма                                    & \(b+a\)              \\
-        Разность                                 & \(a-b\)              \\
-        Произведение                             & \(a*b\)              \\
-        \bottomrule
-    \end{tabular}
+    \frametitle{Модель максимального количества близких пар}
+    \textbf{Идея:} Выбор максимального числа допустимых паросочетаний при условии, что допустимыми парами является только те, у которых евклидово расстояние между точками не превосходит заданного порога, и при этом каждая точка может входить не более чем в одну пару.
+
+    Пусть коэффициент $\mu_{ij}$ – индикатор того, что расстояние $\lambda_{ij}$ между $i$-ой точкой первого созвездия и $j$-ой точкой второго созвездия не превышает порога $p$, т.е. $\mu_{ij}=\mathbb{I}[\lambda_{ij}\le p]$.
+
+    Здесь тоже получается задача о назначениях, которая может быть записана в следующем виде:
+    \[
+        \max f(X) = \sum_{i=1}^{n}\sum_{j=1}^{m}\mu_{ij}x_{ij}, \quad X =\{x_{ij}\} \in \{0,1\}, \sum_{i=1}^{n}x_{ij}\le 1, \sum_{j=1}^{m}x_{ij}\le 1.
+    \]
+    Величина $\frac{f(X)}{mn}$ , полученная на основе решения этой задачи, используется как оценка сходства между созвездиями двух иероглифов.
 \end{frame}
 
-
-\subsection{Разное}
-
+\subsection{Ансамбль моделей вычисления мер сходства}
 \begin{frame}
-    \frametitle{Большой многоуровневый список}
+    \frametitle{Ансамбль моделей вычисления мер сходства}
     \begin{itemize}
-        \item \textbf{Пункт 1}
-              \begin{itemize}
-                  \itemi Подпункт 1-1
-                  \itemi Подпункт 1-2
-              \end{itemize}
-        \item \textbf{Пункт 2}
-              \begin{itemize}
-                  \itemi Подпункт 2-1
-              \end{itemize}
-        \item \textbf{Пункт 3}
-              \begin{itemize}
-                  \itemi Подпункт 3-1
-                  \itemi Подпункт 3-2
-              \end{itemize}
-        \item \textbf{Пункт 4}
-              \begin{itemize}
-                  \itemi Подпункт 4-1
-              \end{itemize}
-        \item \textbf{Пункт 5}
-              \begin{itemize}
-                  \itemi Подпункт 5-1
-                  \itemi Подпункт 5-2
-                  \itemi Подпункт 5-3
-              \end{itemize}
+        \item Основная идея ансамбли заключается в комбинировании выходных результатов нескольких моделей для получения более устойчивого и точного результата.
+        \item В нашем случае: усреднение порядков ранжирования, полученных на основе значений соответствующих метрик схожести. Если после усреднения получался дробный порядок, выполнялось округление в пользу первой модели.
+    \end{itemize}
+
+    Допустим, проводится поиск иероглифа среди $N$ изображений, для $i$-ого изображения порядки ранжирования значений мер сходства для первой и второй модели – $m_i$ и $n_i$ соответственно. Тогда итоговый порядок $r_i$ вычисляется так:
+    \[
+        r_i =
+        \begin{cases}
+            \lfloor \frac{m_i + n_i}{2}\rfloor, & \text{если } m_i \leq n_i, \\
+            \lceil \frac{m_i + n_i}{2}\rceil ,  & \text{в противном случае}.
+        \end{cases}
+    \]
+    $\lfloor\cdot\rfloor$ - операция округления внизу, $\lceil\cdot\rceil$ - операция округления вверх. Выбор именно первой модели для направления «округление» обусловлен тем, что на реальных данных она демонстрировала наилучшие показатели поиска.
+
+\end{frame}
+
+\section{Практические применения}
+\begin{frame}[plain, noframenumbering]
+    \begin{center}
+        \Huge
+        Практические применения
+    \end{center}
+\end{frame}
+
+\subsection{Сравнение с нейросетевыми методами на задачу однократного распознавания}
+\begin{frame}
+    \frametitle{Эксперименты на крупном аннотированном корпусе}
+    \textbf{Набор данных:} CASIA-AHCDB, включает более 2.2 миллиона примеров из более чем 10 000 классов. База данных CASIA-AHCDB была создана путём ручной разметки большого массива страниц древнекитайских рукописей.\\
+    \textbf{Настройка эксперимента:} Согласно ??, отобраны 550 выборок изображений, в каждую из которых входят один положительный образец и несколько отрицательных. Если положительный образец оказался на первом месте ранжированного списка по возрастанию вычисленных значений меры при запросе другого положительного примера, то результат поиска считается удачной для данной выборки. Итоговое качество метода измеряется точностью бинарной классификации на основе результатов всех выборок.
+    \textbf{Вычислительное устройство:} Все эксперименты проводились на обычном ноутбуке с восьмиядерным процессором Intel\textsuperscript{\textregistered} Core\textsuperscript{\texttrademark} i5-11300H 11-го поколения с тактовой частотой 3,10 ГГц и 16 ГБ оперативной памяти без GPU ускорителей.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Эксперименты на крупном аннотированном корпусе}
+    \begin{table}
+        \centering
+        \captionsetup{justification=centering} % выравнивание подписи по-центру
+        % \caption{Сравнение точности классификации методов однократного распознавания. }\label{tab:result_1}
+        \begin{tabular}{cccc}
+            \toprule
+            \textbf{Метод}                      & \textbf{Категория}       & \textbf{5-way} & \textbf{20-way} \\
+            \midrule
+            Сиамская сеть \cite{li2022large}    & Нейросетевой             & 95.00          & -               \\
+            MED \cite{ma2020joint}              & Нейросетевой             & 96.64          & 94.52           \\
+            \textbf{Предл. метод (1-ая модель)} & \textbf{Алгоритмический} & \textbf{96.91} & \textbf{95.10}  \\
+            \textbf{Предл. метод (2-ая модель)} & \textbf{Алгоритмический} & \textbf{94.78} & \textbf{93.67}  \\
+            \textbf{Предл. метод (совме.)}      & \textbf{Алгоритмический} & \textbf{97.23} & \textbf{95.84}  \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \begin{itemize}
+        \item Несмотря на то, что предложенный подход основан на наборе правил и не использует методы машинного обучения, по точности распознавания он сопоставим с современными нейросетевыми методами, требующими значительных вычислительных ресурсов и в ряде случаев даже превосходит их.
+        \item Точность метода, основанного на первой оптимизационной модели, превышает точность метода, использующего вторую модель. \item Совместное использование двух предложенных моделей позволяет достичь небольшого, но устойчивого улучшения итогового качества.
     \end{itemize}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Четыре изображения}
-    \centering
-    \includegraphics[width=0.35\linewidth,angle=35]{latex}
-    \includegraphics[width=0.35\linewidth,angle=135]{latex}\\
-    \includegraphics[width=0.35\linewidth,angle=15]{latex}
-    \includegraphics[width=0.35\linewidth,angle=-15]{latex}
-\end{frame}
+
+\subsection{Поисковый запрос в рукописных документах}
+
+\subsection{Вычислительная эффективность}
+
 

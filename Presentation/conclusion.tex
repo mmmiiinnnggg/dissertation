@@ -1,10 +1,21 @@
 \begin{frame}
+    \frametitle{Положения, выносимые на защиту}
+    \begin{itemize}
+        \item Методы построения признакового описания для древнекитайского иероглифа в виде конечного набора критичных точек на основе медиального представления и непрерывной морфологии. Предложен метод выбора критических точек среди вершин скелетного графа и точек максимальной кривизной ребер скелетного графа.
+        \item Методы построения оптимизационной модели для сравнения точечных признаков иероглифа. Разработаны методы получения меры близости с двумя видами моделей путем решения задачи о назначениях, которые могут быть реализованы эффективной процедурой вычисления.
+        \item Обоснование работоспособности предложенных методов путём реализации программного комплекса. Экспериментально доказано, что разработанные методы не уступают по качеству существующим современным методам с использованием нейронных сетей, при этом обладают преимуществом отсутствия требования обучения на гигантской обучающей выборке, низкого запроса к вычислительным ресурсам и интерпретируемости алгоритма.
+    \end{itemize}
+\end{frame}
+\note{
+    Проговариваются вслух положения, выносимые на защиту
+}
+
+\begin{frame}
     \frametitle{Научная новизна}
     \begin{itemize}
-        \item Впервые реализован \dots
-        \item Разработана программа \dots
-        \item Впервые проведён анализ \dots
-        \item Предложена схема \dots
+        \item Предложены новые математические модели, позволяющие эффективно анализировать форму древного иероглифа на основе непрерывной морфологии, и построить признаковое описание для изображения иероглифа в виде конечного множества критичных точек, характеризующих топологическое и геометрическое свойство иероглифа.
+        \item Предложены модели для сравнения иероглифических признаковых описаний, полученных предложенными моделями построения точечных признаков, по принципу сопоставления соответствия пар критичных точек.
+        \item Разработана оптимизационная модель через задачу линейного программирования для вычисления количественной меры сходства между иероглифами на основе точечных признаковых описаний.
     \end{itemize}
 \end{frame}
 \note{
@@ -14,80 +25,67 @@
 \begin{frame}
     \frametitle{Научная и практическая значимость}
     \begin{itemize}
-        \item Получены выражения для \dots.
-        \item Определены условия \dots.
-        \item Разработаны устройства \dots.
+        \item Разработаны методы построения признакового описания древнекитайского рукописного иероглифа в виде конечного набора критичных точек через медиальное представление формы бинарного изображения.
+        \item Разработаны методы сравнения форм на основе оптимизационной модели линейного программирования, используя построенные точечные признаки иероглифов.
+        \item Реализованы все предложенные методы, а также исследованы приложения для решения различных прикладных задач, связанных с поиском информации в архивных документах. Подтверждена сравнимость результатов с передовыми нейросетевыми методами при минимальным требование к ресурсам.
     \end{itemize}
 \end{frame}
 \note{
     Проговариваются вслух научная и практическая значимость
 }
 
-\begin{frame}
-    \frametitle{Свидетельство о регистрации программы}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[height=0.7\textheight]{registration}
-    \end{figure}
-\end{frame}
-\note{
-    Получено свидетельство о регистрации разработанной программы \textsc{Hello~world™}.
-}
+% \begin{frame}
+%     \frametitle{Свидетельство о регистрации программы}
+%     \begin{figure}[h]
+%         \centering
+%         \includegraphics[height=0.7\textheight]{registration}
+%     \end{figure}
+% \end{frame}
+% \note{
+%     Получено свидетельство о регистрации разработанной программы \textsc{Hello~world™}.
+% }
 
-\begin{frame}
-    \frametitle{Акт о внедрении}
-    \begin{figure}[h]
-        \centering
-        \fbox{
-            \begin{minipage}[t]{0.4\linewidth}
-                \includegraphics[width=\linewidth]{implementation}
-            \end{minipage}
-        }
-    \end{figure}
-\end{frame}
-\note{
-    Получен акт о внедрении.
-}
+% \begin{frame}
+%     \frametitle{Акт о внедрении}
+%     \begin{figure}[h]
+%         \centering
+%         \fbox{
+%             \begin{minipage}[t]{0.4\linewidth}
+%                 \includegraphics[width=\linewidth]{implementation}
+%             \end{minipage}
+%         }
+%     \end{figure}
+% \end{frame}
+% \note{
+%     Получен акт о внедрении.
+% }
 
 \begin{frame} % публикации на одной странице
-% \begin{frame}[t,allowframebreaks] % публикации на нескольких страницах
+    % \begin{frame}[t,allowframebreaks] % публикации на нескольких страницах
     \frametitle{Основные публикации}
-    \nocite{vakbib1}%
-    \nocite{vakbib2}%
-    %
-    %% authorwos
-    \nocite{wosbib1}%
-    %
-    %% authorscopus
-    \nocite{scbib1}%
-    %
-    %% authorconf
-    \nocite{confbib1}%
-    \nocite{confbib2}%
-    %
-    %% authorother
-    \nocite{bib1}%
-    \nocite{bib2}%
-    \ifnumequal{\value{bibliosel}}{0}{
-        \insertbiblioauthor
-    }{
-        \printbibliography%
-    }
+    \begin{itemize}
+        \item  M. Xu, L. Mestetskiy. An Approach to Searching for Hieroglyphs in Chinese Manuscript Archives Based on Morphological Analysis // The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences. — 2025 \textbf{(Scopus)}. — Т. XLVIII-2/W9—2025. — С. 283—288. — URL: https://isprs-archives.copernicus.org/articles/XLVIII-2-W9-2025/283/2025/.
+        \item L. Mestetskiy, M. Xu. Constellation method for one-shot search of handwrittenglyphs // Pattern Recognition and Image Analysis. — 2026 \textbf{(В печати на 2-й номер, ВАК, Scopus, WoS)}.
+        \item M. Xu, L. Mestetskiy. Handwritten Chinese character retrieval via constellation matching  // Proceedings of the 3rd International Conference on Machine Intelligence and Digital Applications. — 2026 \textbf{(В печати (к мае), Scopus)}.
+    \end{itemize}
 \end{frame}
-\note{
-    Результаты работы опубликованы в N печатных изданиях,
-    в~т.\:ч. M реферируемых изданиях.
-}
+
+\begin{frame} % публикации на одной странице
+    % \begin{frame}[t,allowframebreaks] % публикации на нескольких страницах
+    \frametitle{Основные публикации}
+    \begin{itemize}
+        \item М. Сюй. Применение морфологического анализа для поиска и распознавания в рукописных древнекитайских архивах  // Сборник тезисов Международной научной конференции студентов, аспирантов и молодых учёных «Ломоносов 2025» секция «Вычислительная Математика и Кибернетика ». — Макс Пресс. 2025. — С. 74—75.
+        \item Л. Местецкий, М. Сюй. Поиск рукописных китайских иероглифов методом созвездий // Тезисы докладов 22-й всероссийской конференции с международным участием «Математические методы распознавания образов». — Макс Пресс. 2025. — С. 112—115.
+    \end{itemize}
+\end{frame}
 
 \begin{frame}
     \frametitle{Участие в конференциях}
     \begin{itemize}
-        \item Научная сессия МГУ, Москва 2013--2015;
-        \item \rom{24} Russian Conference (RuC 2014), Obninsk, Russia, 2014
-        \item \rom{7} International Conference (IAC 16), Busan, Korea,
-              2016;
-        \item \rom{28} Other Conference (AC 16), East Lansing, MI USA, 2016;
-        \item \dots
+        \item Международной научной конференции студентов, аспирантов и молодых учёных <<Ломоносов-2025>> (Россия, Москва, 2025),
+        \item 6th International workshop on Photogrammetric techniques for environmental and infrastructure monitoring, Biometry and Biomedicine (Россия, Москва, 2025),
+        \item 22-й всероссийской конференции с международным участием «Математические методы распознавания образов» (ММРО-2025),
+        \item 3rd International Conference on Machine Intelligence and Digital Applications (Китай, Сиань, 2026).
     \end{itemize}
 \end{frame}
 \note{
