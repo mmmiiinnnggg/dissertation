@@ -1,0 +1,120 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{li2022large}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=fe220b06697acb41793fa0126227ae92}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yi-Quan},
+           giveni={Y\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=082c48775f8fb368735a0d5dd4e56a2f}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Hao-Sen},
+           giveni={H\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=c2c90ba3cd40372f9bf27e33351bbdcc}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Daw-Tung},
+           giveni={D\bibinithyphendelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{99c8a5e44e49fe5a301282624f3e501e}
+      \strng{fullhash}{99c8a5e44e49fe5a301282624f3e501e}
+      \strng{fullhashraw}{99c8a5e44e49fe5a301282624f3e501e}
+      \strng{bibnamehash}{99c8a5e44e49fe5a301282624f3e501e}
+      \strng{authorbibnamehash}{99c8a5e44e49fe5a301282624f3e501e}
+      \strng{authornamehash}{99c8a5e44e49fe5a301282624f3e501e}
+      \strng{authorfullhash}{99c8a5e44e49fe5a301282624f3e501e}
+      \strng{authorfullhashraw}{99c8a5e44e49fe5a301282624f3e501e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{12}
+      \field{journaltitle}{Applied Sciences}
+      \field{title}{Large-scale printed Chinese character recognition for ID cards using deep learning and few samples transfer learning}
+      \field{year}{2022}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{907}
+      \range{pages}{1}
+      \field{volume}{12}
+      \range{volume}{1}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{ma2020joint}{inproceedings}{useauthor=false}{}
+      \name{author}{6}{}{%
+        {{hash=6bf332cd81abd7dfeacd6773a9d79162}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Weihong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=28aabb00d4514c4a2ed040fec8173a53}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hesuo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=13b7cf344c5e6e3720ba8de1d82b41d9}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Lianwen},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7c2ba06187d32287c00b0b202818fe0a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Sihang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=499e3696581cb4a5736a6cbf8dd11f94}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jiapeng},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b620cfcaa491bd32e93d9becb3af516d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yongpan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{authorbibnamehash}{39c5086d288c63cbfef709147f15106a}
+      \strng{authornamehash}{39c5086d288c63cbfef709147f15106a}
+      \strng{authorfullhash}{0bf0eb15e79663b86de15692f75c66d3}
+      \strng{authorfullhashraw}{0bf0eb15e79663b86de15692f75c66d3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 17th International Conference on Frontiers in Handwriting Recognition (ICFHR)}
+      \field{title}{Joint layout analysis, character detection and recognition for historical document digitization}
+      \field{year}{2020}
+      \field{pages}{31\bibrangedash 36}
+      \range{pages}{6}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
