@@ -22,12 +22,14 @@
     }
     \centering
     \vfill
-    \usebeamerfont{subtitle}\insertsubtitle\par
+    \usebeamerfont{author}\insertauthor\par
     \bigskip
     \usebeamerfont{title}\inserttitle\par
-    \vfill
-    \usebeamerfont{author}\insertauthor\par
-    \vfill
+    \bigskip
+    \usebeamerfont{subtitle}\insertsubtitle\par
+    \bigskip
+    \emph{Научный руководитель:}~\supervisorFioShort\par
+    \bigskip
     \usebeamerfont{date}\insertdate\par
 }
 
@@ -35,8 +37,9 @@
 \title{\thesisTitle}
 \author{%
     \texorpdfstring{%
-        \emph{Выступающий:}~\thesisAuthor\\%
-        \emph{Научный руководитель:}~\supervisorFioShort\\%
+        \thesisAuthor\\%
+        % \emph{Выступающий:}~\thesisAuthor\\%
+        % \emph{Научный руководитель:}~\supervisorFioShort\\%
         %
     }{\thesisAuthor}%
 }
@@ -49,5 +52,5 @@
     }{}
 }{}
 \subtitle{Диссертация на соискание учёной степени \\
-    \thesisDegree\ по специальности \thesisSpecialtyNumber\ \\
-    \thesisSpecialtyTitle}
+    \thesisDegree\ по специальности \\
+    \thesisSpecialtyNumber\ \thesisSpecialtyTitle}
