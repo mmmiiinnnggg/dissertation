@@ -16,7 +16,11 @@
 \providebool{presentation}
 
 \usepackage{comment}    % Позволяет убирать блоки текста (добавляет
-                        % окружение comment и команду \excludecomment)
+% окружение comment и команду \excludecomment)
+
+%%% запрет на лигатуры в английских словах: Использование лигатур создаёт проблемы с кодировкой и, соответственно, поиском/копированием текста в некоторых системах. 
+\usepackage{microtype}
+\DisableLigatures[i,f,l,t]{encoding = *, family = *}
 
 %%% Поля и разметка страницы %%%
 \usepackage{pdflscape}  % Для включения альбомных страниц
@@ -38,7 +42,7 @@
     % quotient-mode        = fraction, % красивые дроби могут не соответствовать ГОСТ
     fraction-function    = \sfrac,
     separate-uncertainty,
-    ]{siunitx}[=v2]                 % Размерности SI
+]{siunitx}[=v2]                 % Размерности SI
 \sisetup{inter-unit-product = \ensuremath{{}\cdot{}}}
 
 % Кириллица в нумерации subequations
@@ -56,7 +60,7 @@
 
 \makeatletter
 %\show\f@size    % неплохо для отслеживания, но вызывает стопорение процесса,
-                 % если документ компилируется без команды  -interaction=nonstopmode
+% если документ компилируется без команды  -interaction=nonstopmode
 \setlength{\curtextsize}{\f@size pt}
 \makeatother
 
@@ -67,9 +71,9 @@
     \fi
     \PassOptionsToPackage{no-math}{fontspec}    % https://tex.stackexchange.com/a/26295/104425
     \usepackage{polyglossia}[2014/05/21]        % Поддержка многоязычности
-                                        % (fontspec подгружается автоматически)
+    % (fontspec подгружается автоматически)
 \else
-   %%% Решение проблемы копирования текста в буфер кракозябрами
+    %%% Решение проблемы копирования текста в буфер кракозябрами
     \ifnumequal{\value{usealtfont}}{0}{}{
         \input glyphtounicode.tex
         \input glyphtounicode-cmr.tex %from pdfx package
@@ -78,8 +82,8 @@
     \usepackage{cmap}   % Улучшенный поиск русских слов в полученном pdf-файле
     \ifnumequal{\value{usealtfont}}{2}{}{
         \defaulthyphenchar=127  % Если стоит до fontenc, то переносы
-                                % не впишутся в выделяемый текст при
-                                % копировании его в буфер обмена
+        % не впишутся в выделяемый текст при
+        % копировании его в буфер обмена
     }
     \usepackage{textcomp}
     \usepackage[T1,T2A]{fontenc}                    % Поддержка русских букв
@@ -117,7 +121,7 @@
 \usepackage{longtable} % Длинные таблицы
 \usepackage{multirow,makecell}   % Улучшенное форматирование таблиц
 \usepackage{tabulary,tabularray} % Таблицы с автоматически подбирающейся
-                                 % шириной столбцов
+% шириной столбцов
 \UseTblrLibrary{booktabs}
 \ExplSyntaxOn% define \IfTokenListEmpty to use \captionof with tabularray
 \prg_generate_conditional_variant:Nnn \tl_if_empty:n { e } { TF }
@@ -135,7 +139,7 @@
     \ifluatex
         \ifnumequal{\value{draft}}{1}{% Черновик
             \usepackage[hyphenation, lastparline, nosingleletter, homeoarchy,
-            rivers, draft]{impnattypo}
+                rivers, draft]{impnattypo}
         }{% Чистовик
             \usepackage[hyphenation, lastparline, nosingleletter]{impnattypo}
         }
@@ -174,11 +178,11 @@
 \usepackage{aliascnt}
 \usepackage[figure,table]{totalcount}   % Счётчик рисунков и таблиц
 \usepackage{totcount}   % Пакет создания счётчиков на основе последнего номера
-                        % подсчитываемого элемента (может требовать дважды
-                        % компилировать документ)
+% подсчитываемого элемента (может требовать дважды
+% компилировать документ)
 \usepackage{totpages}   % Счётчик страниц, совместимый с hyperref (ссылается
-                        % на номер последней страницы). Желательно ставить
-                        % последним пакетом в преамбуле
+% на номер последней страницы). Желательно ставить
+% последним пакетом в преамбуле
 
 %%% Продвинутое управление групповыми ссылками (пока только формулами) %%%
 \ifpresentation
