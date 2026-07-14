@@ -13,12 +13,48 @@
 \section{Задача однократного распознавания}\label{sec:ch5/sect1}
 Чтобы сравнение предлагаемого метода с существующими подходами было справедливым и масштабированным, мы провели эксперименты однократного распознавания на крупном аннотированном корпусе древнекитайских рукописных символов CASIA-AHCDB \cite{xu2019casia}. Этот корпус представляет собой одну из наиболее объёмных и тщательно размеченных коллекций древних рукописных иероглифов: он включает более 2.2 миллиона примеров из более чем 10~000 классов, что делает его особенно ценным для задач масштабного поиска и сопоставления символов в реальных документах. Примеры иероглифических изображений из набора данных CASIA-AHCDB приведены на рисунках~\cref{fig:sec5_casia_ahcdb}. База данных CASIA-AHCDB была создана путём ручной разметки большого массива страниц древнекитайских рукописей и предоставляет аннотированные изображения отдельных иероглифов, извлечённых из исторических источников. Общее время для аннотирования оценивается в несколько тысяч часов. Благодаря широкому разнообразию почерков, стилевых вариаций и шумов, характерных для древних текстов, этот набор данных хорошо подходит для проверки устойчивости алгоритмов поиска и распознавания вне ограничений стандартных современных наборов. Использование такого набора в качестве тестовой базы обеспечивает строгую проверку метода в условиях, приближённых к практическим задачам историко-лингвистического анализа, где высокая вариативность форм и большое количество классов существенно усложняют задачу поиска.
 
-\begin{figure}[ht]
-    \centerfloat{
-        \includegraphics[width=1.0\linewidth]{sec5_casia_ahcdb.png}
-    }
-    \caption{Пример древнекитайских рукописей из набора документов CASIA-AHCDB. Каждое изображение иероглифа было выделено и размечено из массивных страниц древнекитайских рукописных документов. Разметка изображений организована в формате XX\_YYY.bmp, где XX обозначает индекс иероглифа, а YYY — порядковый номер соответствующего экземпляра в документах. Формат .bmp используется для хранения бинарных изображений.}\label{fig:sec5_casia_ahcdb}
-\end{figure}
+% \begin{figure}[!htbp]
+%     \centerfloat{
+%         \includegraphics[width=1.0\linewidth]{sec5_casia_ahcdb.png}
+%     }
+%     \caption{Примеры древнекитайских рукописей из набора документов CASIA-AHCDB. Каждое изображение иероглифа было выделено и размечено на страницах рукописных документов. Для каждого иероглифа построены скелетный граф, метаграф и созвездие в соответствии с методами, описанными в главе \cref{ch:ch3}. Переход от скелетного графа к метаграфу позволяет существенно упростить представление иероглифа и снизить вычислительную сложность.}\label{fig:sec5_casia_ahcdb}
+% \end{figure}
+
+\begin{table}[!htbp]
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Изображение}                                                                  & \textbf{Скелет} & \textbf{Метаграф} & \textbf{Созвездие} \\
+        \hline
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/8_12096_original.png}     &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/8_12096_skeleton.png}     &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/8_12096_metagraph.png}    &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/8_12096_constellation.png}                                                           \\
+        \hline
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/85_12129_original.png}    &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/85_12129_skeleton.png}    &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/85_12129_metagraph.png}   &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/85_12129_constellation.png}                                                          \\
+        \hline
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/314_29187_original.png}   &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/314_29187_skeleton.png}   &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/314_29187_metagraph.png}  &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/314_29187_constellation.png}                                                         \\
+        \hline
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/1297_24126_original.png}  &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/1297_24126_skeleton.png}  &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/1297_24126_metagraph.png} &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/1297_24126_constellation.png}                                                        \\
+        \hline
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/1305_2455_original.png}   &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/1305_2455_skeleton.png}   &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/1305_2455_metagraph.png}  &
+        \includegraphics[width=0.22\textwidth]{sec5_pipeline_images/1305_2455_constellation.png}                                                         \\
+        \hline
+    \end{tabular}
+    \caption{Примеры созвездий древнекитайских иероглифов из набора документов CASIA-AHCDB. Каждое изображение иероглифа было выделено и размечено на страницах рукописных документов. Для каждого иероглифа построены скелетный граф, метаграф и созвездие в соответствии с методами, описанными в главе \cref{ch:ch3}. Переход от скелетного графа к метаграфу позволяет существенно упростить представление иероглифа с использованием сильно меньшим числом вершин и снизить вычислительную сложность.}\label{fig:sec5_casia_ahcdb}
+\end{table}
 
 Задача однократного распознавания состоит в нахождении самого похожего иероглифа среди набора примеров-кандидатов с определенным количеством (5-20 штук) при заданном иероглифе запроса. В набор кандидатов входит один положительный пример, который является другим изображением иероглифа запроса, и несколько отрицательных примеров, на которых изображены другие иероглифы. Если самый похожий иероглиф, выданный алгоритмом, является положительным примером, то считается, что для данной задачи эксперимент дал положительный выход.
 
